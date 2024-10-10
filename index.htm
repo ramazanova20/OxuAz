@@ -5,8 +5,366 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .slider-img {
+            margin-bottom: 100px;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .slider-img img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
-<body>
+<body class="relative">
+    <header>
+        <div class="topbar fixed w-full bg-blue-950 pl-14">
+            <div class="w-full hidden lg:block">
+                <div class="topbar-details py-2 flex flex-row ">
+                    <div class="topbar-icon">
+                        <i class="fa-regular fa-star text-white"></i>
+                    </div>
+                    <div class="topbar-texts text-white">  
+                        <marquee class="marquee">
+                        <a href="/dunya/mask-harris-qalib-gelerse-abs-nin-sonu-olacaq" target="_blank" class="umami--click--flash">Mask: "Harris qalib gələrsə, ABŞ-nin sonu olacaq"</a>
+                        <a href="/cemiyyet/sos-bakida-sagirdlerin-suuraltisina-tesir-edecek-mekteb-levazimatlari-satilir" target="_blank" class="umami--click--flash">SOS: Bakıda şagirdlərin şüuraltısına təsir edəcək məktəb ləvazimatları satılır</a>
+                        <a href="/dunya/iran-ucuslari-legv-etdi-emeliyyata-hazirliq" target="_blank" class="umami--click--flash">İran uçuşlara qoyduğu məhdudiyyətləri aradan qaldırdı</a>
+                        <a href="/iqtisadiyyat/maliyye-piramidasi-telesi-minlerle-insani-nece-tora-salirlar" target="_blank" class="umami--click--flash">Maliyyə piramidası TƏLƏSİ: Minlərlə insanı necə tora salırlar?</a>
+                        <a href="/idman/turkiye-superliqasi-qalatasaray-qalib-geldi-besiktas-xal-itirdi" target="_blank" class="umami--click--flash">Türkiyə Superliqası: "Qalatasaray" qalib gəldi, "Beşiktaş" xal itirdi</a>
+                        <a href="/dunya/yaxin-serqin-sonmeyen-atesi-veziyyet-cox-tehlukelidir" target="_blank" class="umami--click--flash">Yaxın Şərqin sönməyən atəşi: Vəziyyət çox təhlükəlidir</a>
+                        <a href="/kriminal/bakida-ata-ve-ogul-qohumlarini-bicaqladi-olen-ve-yaralananlar-var" target="_blank" class="umami--click--flash">Bakıda ata və oğul qohumlarını bıçaqladılar: Buzovnadakı dəhşətli qətlin TƏFƏRRÜATI</a>
+                        <a href="/idman/gimnastlarimiz-boyuk-britaniyadaki-yarisin-finalinda" target="_blank" class="umami--click--flash">Azərbaycan gimnastları Britaniyada yarışda 1 qızıl, 1 bürünc medal qazanıblar</a>
+                        <a href="/dunya/ermenistanda-hakimiyyet-eleyhine-aksiya-konstitusiya-mehkemesinin-binasina-dogru-yurus-kecirilir" target="_blank" class="umami--click--flash">Ermənistanda hakimiyyət əleyhinə aksiya: Konstitusiya Məhkəməsinin binasına doğru yürüş keçirilir</a>
+                        <a href="/siyaset/qafqazin-hirosimasi-adlandirilan-agdam-ermenilerin-viran-qoydugu-seher" target="_blank" class="umami--click--flash">"Qafqazın Hirosiması" adlandırılan Ağdam: Ermənilərin viran qoyduğu şəhər</a>
+                        <a href="/ordu/azerbaycan-ordusunun-herbi-qulluqcusu-vefat-etdi" target="_blank" class="umami--click--flash">Azərbaycan Ordusunun hərbi qulluqçusu vəfat etdi</a>
+                        <a href="/iqtisadiyyat/kredit-kartlari-ile-bagli-yenilik-verime-qaydalari-sertlesdirile-biler" target="_blank" class="umami--click--flash">Kredit kartları ilə bağlı YENİLİK: Verilmə qaydaları sərtləşdirilə bilər</a>
+                        <a href="/cemiyyet/ipoteka-krediti-ile-menzil-almaq-isteyenlerin-nezerine-faizlerin-azaldilmasi-ne-derecede-realdir" target="_blank" class="umami--click--flash">İpoteka yolu ilə mənzil almaq istəyənlərin NƏZƏRİNƏ: Faizlərin azaldılması nə dərəcədə realdır?</a>
+                        <a href="/dunya/israil-resmisi-irani-devirmek-ucun-nuve-obyektlerine-ve-hokumet-orqanlarina-hucum-etmek-lazimdir" target="_blank" class="umami--click--flash">İsrail rəsmisi: "İranı devirmək üçün nüvə obyektlərinə və hökumət orqanlarına hücum etmək lazımdır"</a>
+                        <a href="/dunya/kollektiv-qerbin-gulunc-hemleleri-robotlasmis-siyasetcilerin-realliqdan-uzaq-cixislari" target="_blank" class="umami--click--flash">Kollektiv Qərbin gülünc həmlələri: Robotlaşmış siyasətçilərin reallıqdan uzaq çıxışları</a>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-navbar">
+            <div class=" fixed w-full">
+                <div class="custom-navbar-inner flex flex-row justify-around py-2 lg:mt-8 bg-red-900">
+                    <div class="cnavbarLeft">
+                        <div class="cnavbarLogo flex flex-row w-[70%] lg:w-full">
+                            <img src="img/IfsiBSxyyGjPHmhgB9VctzD9niJlXjJKpm4F3dES.svg" alt=""/>
+                            <img src="img/HUgkpzUFW3YH7mjfasWA5XinecZU7opih7ASlYyg.webp" alt="" class="h-[35px] pl-3 w-[50%] lg:w-full" />
+                        </div>
+                    </div>
+                    <div class="live hidden lg:block ">
+                        <div class="flex flex-row justify-center">
+                            <button class="rounded-[10px] px-2 border-[1px] border-[#ccc] bg-red-700 mr-5"><a href="" class="live pr-"><i class="fa-solid fa-circle-play text-white pr-3"></i><span class="text-white"><b>Live</b></span></a></button>
+                            <ul class="flex flex-row gap-3">
+                                <li class="swiper-slide tag-item">
+                                    <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                        <a itemprop="url" href="" class="rounded-lg">
+                                            <span itemprop="name">İlham Əliyev</span>
+                                        </a>
+                                    </button>
+                                 </li>
+                                
+                                <li class="swiper-slide tag-item">
+                                    <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                        <a itemprop="url" href="">
+                                            <span itemprop="name">İran-İsrail münasibətləri</span>
+                                        </a>
+                                    </button>
+                                </li>
+                                <li class="swiper-slide tag-item">
+                                    <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                        <a itemprop="url" href="">
+                                            <span itemprop="name">COP29</span>
+                                        </a>
+                                    </button>
+                                </li>
+                                <li class="swiper-slide tag-item">
+                                    <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                        <a itemprop="url" href="">
+                                            <span itemprop="name">Günün əsas xəbərləri</span>
+                                        </a>
+                                    </button>
+                                </li>
+                                <li class="swiper-slide tag-item">
+                                    <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                        <a itemprop="url" href="">
+                                            <span itemprop="name">Yeni Kaledoniya</span>
+                                        </a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cnavbarRight flex flex-row justify-between  gap-5">
+                        <div class="cnavbarSearch">
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                            </button>
+                        </div>
+                        <a href="" class="rounded-sm block lg:hidden ">EN</a>
+                        <div class="cnavbarSidebar">
+                            <button>
+                                <i class="fa-solid fa-bars text-xl" id="hamIcon" onclick="toggleSidebar()"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div class="cnavbarSearchForm"></div> -->
+                </div>
+            </div>
+            <!-- <div class="sideBar p-3 items-center justify-center flex pt-12">
+                <ul class="flex  justify-center p-3  flex-wrap  gap-5 w-[90%]">
+                    <li class="border-2 p-2 rounded-[16px]"><a href="/" class="text-xl">Ana səhifə</a></li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/siyaset" class="text-xl">
+                            <span itemprop="name">Siyasət</span>
+                        </a>
+                    </li class="border-2 p-2 rounded-[16px]">
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/iqtisadiyyat" class="text-xl">
+                            <span itemprop="name">İqtisadiyyat</span>
+                        </a>
+                    </li class="border-2 p-2 rounded-[16px]">
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/cemiyyet" class="text-xl">
+                            <span itemprop="name">Cəmiyyət</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/ordu" class="text-xl">
+                            <span itemprop="name">Ordu</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/shou-biznes" class="text-xl">
+                            <span itemprop="name">Şou-biznes</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/kriminal" class="text-xl">
+                            <span itemprop="name">Kriminal</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/idman" class="text-xl">
+                            <span itemprop="name">İdman</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/medeniyyet" class="text-xl">
+                            <span itemprop="name">Mədəniyyət</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/dunya" class="text-xl">
+                            <span itemprop="name">Dünya</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/musahibe" class="text-xl">
+                            <span itemprop="name">Müsahibə</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/turizm" class="text-xl">
+                            <span itemprop="name">Turizm</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/ikt" class="text-xl">
+                            <span itemprop="name">İKT</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/baku-tv" class="text-xl">
+                            <span itemprop="name">Baku TV</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/cinemastercard" class="text-xl">
+                            <span itemprop="name">CineMastercard</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/digar" class="text-xl">
+                            <span itemprop="name">Digər</span>
+                        </a>
+                    </li>
+                    <li class="border-2 p-2 rounded-[16px]">
+                        <a itemprop="url" href="https://oxu.az/maraqli" class="text-xl">
+                            <span itemprop="name">Maraqlı</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        
+            <div class="liveMb block lg:hidden w-full  pt-14">
+                <div class="flex flex-row">
+                    <button class="rounded-[10px] px-2 border-[1px] border-[#ccc] bg-red-700 mr-5"><a href="" class="live pr-"><i class="fa-solid fa-circle-play text-white pr-3"></i><span class="text-white"><b>Live</b></span></a></button>
+                    <ul class="flex flex-row gap-3 overflow-x-auto">
+                        <li class="swiper-slide tag-item">
+                            <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                <a itemprop="url" href="" class="rounded-lg">
+                                    <span itemprop="name">İlham Əliyev</span>
+                                </a>
+                            </button>
+                         </li>
+                        
+                        <li class="swiper-slide tag-item">
+                            <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                <a itemprop="url" href="">
+                                    <span itemprop="name">İran-İsrail münasibətləri</span>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="swiper-slide tag-item">
+                            <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                <a itemprop="url" href="">
+                                    <span itemprop="name">COP29</span>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="swiper-slide tag-item">
+                            <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                <a itemprop="url" href="">
+                                    <span itemprop="name">Günün əsas xəbərləri</span>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="swiper-slide tag-item">
+                            <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">
+                                <a itemprop="url" href="">
+                                    <span itemprop="name">Yeni Kaledoniya</span>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        <div class="bottombar w-full bg-blue-950">
+            <div class="w-full block lg:hidden  pt-12 ">
+                <div class="bottombar-details py-2 flex flex-row">
+                    <div class="bottombar-icon">
+                        <i class="fa-regular fa-star text-white"></i>
+                    </div>
+                    <div class="bottombar-texts text-white">
+                        <marquee class="marquee">
+                            <a href="/dunya/mask-harris-qalib-gelerse-abs-nin-sonu-olacaq" target="_blank" class="umami--click--flash">Mask: "Harris qalib gələrsə, ABŞ-nin sonu olacaq"</a>
+                            <a href="/cemiyyet/sos-bakida-sagirdlerin-suuraltisina-tesir-edecek-mekteb-levazimatlari-satilir" target="_blank" class="umami--click--flash">SOS: Bakıda şagirdlərin şüuraltısına təsir edəcək məktəb ləvazimatları satılır</a>
+                            <a href="/dunya/iran-ucuslari-legv-etdi-emeliyyata-hazirliq" target="_blank" class="umami--click--flash">İran uçuşlara qoyduğu məhdudiyyətləri aradan qaldırdı</a>
+                            <a href="/iqtisadiyyat/maliyye-piramidasi-telesi-minlerle-insani-nece-tora-salirlar" target="_blank" class="umami--click--flash">Maliyyə piramidası TƏLƏSİ: Minlərlə insanı necə tora salırlar?</a>
+                            <a href="/idman/turkiye-superliqasi-qalatasaray-qalib-geldi-besiktas-xal-itirdi" target="_blank" class="umami--click--flash">Türkiyə Superliqası: "Qalatasaray" qalib gəldi, "Beşiktaş" xal itirdi</a>
+                            <a href="/dunya/yaxin-serqin-sonmeyen-atesi-veziyyet-cox-tehlukelidir" target="_blank" class="umami--click--flash">Yaxın Şərqin sönməyən atəşi: Vəziyyət çox təhlükəlidir</a>
+                            <a href="/kriminal/bakida-ata-ve-ogul-qohumlarini-bicaqladi-olen-ve-yaralananlar-var" target="_blank" class="umami--click--flash">Bakıda ata və oğul qohumlarını bıçaqladılar: Buzovnadakı dəhşətli qətlin TƏFƏRRÜATI</a>
+                            <a href="/idman/gimnastlarimiz-boyuk-britaniyadaki-yarisin-finalinda" target="_blank" class="umami--click--flash">Azərbaycan gimnastları Britaniyada yarışda 1 qızıl, 1 bürünc medal qazanıblar</a>
+                            <a href="/dunya/ermenistanda-hakimiyyet-eleyhine-aksiya-konstitusiya-mehkemesinin-binasina-dogru-yurus-kecirilir" target="_blank" class="umami--click--flash">Ermənistanda hakimiyyət əleyhinə aksiya: Konstitusiya Məhkəməsinin binasına doğru yürüş keçirilir</a>
+                            <a href="/siyaset/qafqazin-hirosimasi-adlandirilan-agdam-ermenilerin-viran-qoydugu-seher" target="_blank" class="umami--click--flash">"Qafqazın Hirosiması" adlandırılan Ağdam: Ermənilərin viran qoyduğu şəhər</a>
+                            <a href="/ordu/azerbaycan-ordusunun-herbi-qulluqcusu-vefat-etdi" target="_blank" class="umami--click--flash">Azərbaycan Ordusunun hərbi qulluqçusu vəfat etdi</a>
+                            <a href="/iqtisadiyyat/kredit-kartlari-ile-bagli-yenilik-verime-qaydalari-sertlesdirile-biler" target="_blank" class="umami--click--flash">Kredit kartları ilə bağlı YENİLİK: Verilmə qaydaları sərtləşdirilə bilər</a>
+                            <a href="/cemiyyet/ipoteka-krediti-ile-menzil-almaq-isteyenlerin-nezerine-faizlerin-azaldilmasi-ne-derecede-realdir" target="_blank" class="umami--click--flash">İpoteka yolu ilə mənzil almaq istəyənlərin NƏZƏRİNƏ: Faizlərin azaldılması nə dərəcədə realdır?</a>
+                            <a href="/dunya/israil-resmisi-irani-devirmek-ucun-nuve-obyektlerine-ve-hokumet-orqanlarina-hucum-etmek-lazimdir" target="_blank" class="umami--click--flash">İsrail rəsmisi: "İranı devirmək üçün nüvə obyektlərinə və hökumət orqanlarına hücum etmək lazımdır"</a>
+                            <a href="/dunya/kollektiv-qerbin-gulunc-hemleleri-robotlasmis-siyasetcilerin-realliqdan-uzaq-cixislari" target="_blank" class="umami--click--flash">Kollektiv Qərbin gülünc həmlələri: Robotlaşmış siyasətçilərin reallıqdan uzaq çıxışları</a>
+                            </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="sidebar fixed hidden lg:block bg-[#FBFBFA] w-14 top-8 left-0 h-full z-[1000] pt-5 pr-2.5 pb-13">
+        <div class="sidebar-details h-full  justify-between text-center overflow-y-auto">
+            <div class="sidebar-top pb-[40px] ">
+                <div class="sidebar-item pb-2">
+                    <a href="=" class="lang-btn">EN</a>
+                </div>
+                <div class="sidebar-item pb-2">
+                    <a href="=" class="lang-btn">AZ</a>
+                </div>
+                <div class="sidebar-item pb-2">
+                    <a href="=" class="lang-btn">RU</a>
+                </div>
+                <div class="sidebar-item pb-7">
+                    <a href="">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </a>
+                </div>
+                <div class="sidebar-item pb-7">
+                    <a href="">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </a>
+                </div>
+                <div class="sidebar-item pb-7">
+                    <a href="javascript:void(0)" class="theme-mode-btn">
+                        <i onclick="toggleLight()" class="fa-solid fa-moon" id="darkMode"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="sidebar-bottom text-lg ">
+                <div class="sidebar-item pb-1">
+                <a href="https://facebook.com/oxu.azz" target="_blank" rel="nofollow">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+                    <div class="sidebar-item pb-1">
+                <a href="https://twitter.com/oxuaz" target="_blank" rel="nofollow">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
+                    <div class="sidebar-item pb-1">
+                <a href="https://t.me/oxuaze" target="_blank" rel="nofollow">
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+            </div>
+                    <div class="sidebar-item pb-1">
+                <a href="https://whatsapp.com/channel/0029VaAakbx89ingOoeiTp40" target="_blank" rel="nofollow">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+                    <div class="sidebar-item pb-1">
+                <a href="https://www.instagram.com/oxuaz/" target="_blank" rel="nofollow">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+                <div class="sidebar-item pb-1">
+            <a href="https://itunes.apple.com/app/id634362981" target="_blank" rel="nofollow">
+                <img src="img/apple.svg" alt="" class="pl-4" />
+            </a>
+        </div>
+                    <div class="sidebar-item pb-1">
+                <a href="https://play.google.com/store/apps/details?id=az.start.android.oxu" target="_blank" rel="nofollow">
+                    <img src="img/play-store.svg" alt="" class="pl-4" />
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <main class="max-w-[800px] lg:max-w-[1000px] mx-auto pt-[106px]">
+        
+    <button class="rounded-[10px] px-2 border-[1px] border-[#ccc]">Lorem ipss minima!</button>
+    
+
+    <div id="newsCard" class="lg:min-h-[40vh] lg:pt-[40px] w-full flex items-center justify-center gap-8 flex-wrap ">
+        
+    </div>
+    </main>
+
+    <script src="js/index.js"></script>
     
 </body>
 </html>

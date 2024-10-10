@@ -1,0 +1,63 @@
+/* .sidebar {
+    position: fixed;
+    left: -100%;
+    transition: left 0.3s ease;
+}
+
+.sidebar.visible {
+    left: 0;
+} */
+/* .sideBar {
+    display: none;
+}
+
+.sideBar.visible {
+    display: flex; 
+} */
+.sideBar {
+    display: none; 
+}
+
+.sideBar.visible {
+    display: flex; 
+}
+
+
+/* #hamIcon {
+    position: relative;
+} */
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode main {
+    background-color: #503897;
+    color: white;
+}
+
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode li {
+    border-bottom: 1px solid #555;
+}
+
+.dark-mode nav {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode nav a {
+    color: white;
+}
+
+.dark-mode nav li {
+    border-bottom: 1px solid #555;
+}
+
+/* .visible {
+    left: 0;
+} */
